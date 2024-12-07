@@ -1,4 +1,4 @@
-package com.example.springboot;
+package com.macros.calculator.backend;
 
 import java.util.Arrays;
 
