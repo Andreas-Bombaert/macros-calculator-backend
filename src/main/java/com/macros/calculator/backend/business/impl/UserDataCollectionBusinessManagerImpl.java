@@ -6,8 +6,6 @@ import com.macros.calculator.backend.dto.UserDataCollectionDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -31,6 +29,7 @@ public class UserDataCollectionBusinessManagerImpl implements UserDataCollection
     }
 
     public void fillMockUsers(){
+        mockUsers.put(1L,(new UserDataCollectionDto(1L, "André", 31, 65.2, 168, "lea.dubois@gmail.com", new UserAddressDto("Rue des Lilas", "Paris", "75015"), new Date(), new Date(), new Date(), false)));
         mockUsers.put(2L,(new UserDataCollectionDto(2L, "Léa Dubois", 31, 65.2, 168, "lea.dubois@gmail.com", new UserAddressDto("Rue des Lilas", "Paris", "75015"), new Date(), new Date(), new Date(), false)));
         mockUsers.put(3L,(new UserDataCollectionDto(3L, "Thomas Martin", 28, 80.7, 185, "thomas.martin@outlook.fr", new UserAddressDto("Avenue de la Liberté", "Marseille", "13001"), new Date(), new Date(), new Date(), true)));
         mockUsers.put(4L,(new UserDataCollectionDto(4L, "Sophie Dupont", 45, 58.9, 170, "sophie.dupont@wanadoo.fr", new UserAddressDto("Chemin du Lac", "Bordeaux", "33000"), new Date(), new Date(), new Date(), false)));
